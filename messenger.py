@@ -13,7 +13,7 @@ def home():
 
 @app.route('/message/<message>')
 def message(message):
-    unicorn_scroll(message,'red',255,1)
+    unicorn_scroll(message,'red',255,5)
     return "ok"
 
 @app.route('/icon/<icon>')
@@ -24,4 +24,5 @@ def icon():
 
 if __name__ == "__main__":
 	unicorn.brightness(0.3)
+    unicorn.rotation(90)
 	app.run(host='0.0.0.0', debug=True)
