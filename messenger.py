@@ -23,6 +23,6 @@ def icon():
 	return "ok"
 
 if __name__ == "__main__":
-	unicorn.brightness(0.3)
+    unicorn.brightness(0.3)
     unicorn.rotation(90)
 	app.run(host='0.0.0.0', debug=True)
