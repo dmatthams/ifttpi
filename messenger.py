@@ -21,10 +21,10 @@ def message(message):
 
 @app.route('/icon/<icon>')
 def icon(icon):
-    for _ in range(loops):
+    for _ in range(5):
         playIcon(icon)
-        unicorn.clear()
-        unicorn.show()
+    unicorn.clear()
+    unicorn.show()
 	return "ok"
 
 if __name__ == "__main__":
