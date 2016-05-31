@@ -7,6 +7,7 @@ from UHScroll import unicorn_scroll
 from playIcon import playIcon
 
 app = Flask(__name__)
+loops = 4
 
 @app.route('/')
 def home():
@@ -14,12 +15,14 @@ def home():
 
 @app.route('/message/<message>')
 def message(message):
-    unicorn_scroll(message,'red',255,0.1)
+    for _ in range(loops):
+        unicorn_scroll(message,'red',255,0.1)
     return "ok"
 
 @app.route('/icon/<icon>')
 def icon(icon):
-	playIcon(icon)
+    for _ in range(loops):
+        playIcon(icon)
 	return "ok"
 
 if __name__ == "__main__":
