@@ -15,7 +15,7 @@ import unicornhat as unicorn
 from PIL import Image
 import signal, numpy, time, os
 
-def playIcon(icon,loops): # scrolls a single letter across the UH
+def playIcon(icon): # scrolls a single letter across the UH
     img = Image.open(os.path.dirname(os.path.abspath(__file__)) + '/icons/' + icon + '.png')
     for o_x in range(int(img.size[0]/8)):
     	for o_y in range(int(img.size[1]/8)):
