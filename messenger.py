@@ -7,7 +7,6 @@ from UHScroll import unicorn_scroll
 from playIcon import playIcon
 
 app = Flask(__name__)
-loops = 4
 brightness = 0.3
 
 @app.route('/')
@@ -17,7 +16,7 @@ def home():
 @app.route('/message/<message>')
 def message(message):
     unicorn.rotation(270)
-    for _ in range(loops):
+    for _ in range(2):
         unicorn_scroll(message,'red',255,0.1)
     unicorn.clear()
     unicorn.show()
@@ -26,7 +25,7 @@ def message(message):
 @app.route('/icon/<icon>')
 def icon(icon):
     unicorn.rotation(0)
-    for _ in range(loops):
+    for _ in range(5):
         playIcon(icon)
     unicorn.clear()
     unicorn.show()
