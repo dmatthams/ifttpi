@@ -25,7 +25,7 @@ def message(message):
 @app.route('/icon/<icon>')
 def icon(icon):
     unicorn.rotation(270)
-    for _ in range(10):
+    for _ in range(5):
         playIcon(icon)
     unicorn.clear()
     unicorn.show()
