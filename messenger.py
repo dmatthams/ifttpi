@@ -8,6 +8,7 @@ from playIcon import playIcon
 
 app = Flask(__name__)
 loops = 4
+brightness = 0.3
 
 @app.route('/')
 def home():
@@ -32,5 +33,5 @@ def icon(icon):
     return "ok"
 
 if __name__ == "__main__":
-    unicorn.brightness(0.3)
+    unicorn.brightness(brightness)
     app.run(host='0.0.0.0', debug=True)
