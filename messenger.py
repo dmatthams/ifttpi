@@ -2,8 +2,7 @@
 
 from flask import Flask, render_template
 import unicornhat as unicorn
-import time, os, stat, threading
-from UHScroll import unicorn_scroll
+import time, os, stat, threading, playIcon, unicorn_scroll
 
 app = Flask(__name__)
 
@@ -18,8 +17,7 @@ def message(message):
 
 @app.route('/icon/<icon>')
 def icon():
-	s = threading.Thread(None,unicorn.show)
-	s.start()
+	playIcon(icon)
 	return "ok"
 
 if __name__ == "__main__":
