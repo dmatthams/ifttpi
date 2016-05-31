@@ -32,5 +32,5 @@ def icon(icon):
     return "ok"
 
 if __name__ == "__main__":
-    unicorn.brightness(1)
+    unicorn.brightness(0.3)
     app.run(host='0.0.0.0', debug=True)
