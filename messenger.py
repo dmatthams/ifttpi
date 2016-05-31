@@ -12,7 +12,7 @@ def home():
 	return 'ready'
 
 @app.route('/message/<message>')
-def say(meassage):
+def message(meassage):
     unicorn_scroll(message)
     return "ok"
 
