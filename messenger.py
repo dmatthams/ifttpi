@@ -17,7 +17,7 @@ def home():
 def message(message):
     unicorn.rotation(270)
     for _ in range(2):
-        unicorn_scroll(message,'red',255,0.1)
+        unicorn_scroll(message,'white',255,0.1)
     unicorn.clear()
     unicorn.show()
     return "ok"
