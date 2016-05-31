@@ -17,7 +17,7 @@ def message(message):
     return "ok"
 
 @app.route('/icon/<icon>')
-def icon():
+def icon(icon):
 	playIcon(icon)
 	return "ok"
 
