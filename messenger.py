@@ -3,7 +3,7 @@
 from flask import Flask, render_template
 import unicornhat as unicorn
 import time, os, stat, threading
-import UHScroll
+from UHScroll import unicorn_scroll
 
 app = Flask(__name__)
 
