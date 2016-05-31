@@ -2,8 +2,9 @@
 
 from flask import Flask, render_template
 import unicornhat as unicorn
-import time, os, stat, threading, playIcon
+import time, os, stat, threading
 from UHScroll import unicorn_scroll
+from playIcon import playIcon
 
 app = Flask(__name__)
 
