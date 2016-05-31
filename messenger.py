@@ -13,7 +13,7 @@ def home():
 
 @app.route('/message/<message>')
 def message(message):
-    unicorn_scroll(message)
+    unicorn_scroll(message,'red',255,1)
     return "ok"
 
 @app.route('/icon/<icon>')
