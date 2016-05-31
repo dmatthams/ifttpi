@@ -26,4 +26,4 @@ def playIcon(icon):
     				r, g, b = int(pixel[0]),int(pixel[1]),int(pixel[2])
     				unicorn.set_pixel(x, y, r, g, b)
     		unicorn.show()
-    		time.sleep(0.1)
+    		time.sleep(0.5)
