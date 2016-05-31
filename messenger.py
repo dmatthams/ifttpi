@@ -17,14 +17,14 @@ def home():
 def message(message):
     for _ in range(loops):
         unicorn_scroll(message,'red',255,0.1)
-    unicorn.clear()
-    unicorn.show()
     return "ok"
 
 @app.route('/icon/<icon>')
 def icon(icon):
     for _ in range(loops):
         playIcon(icon)
+        unicorn.clear()
+        unicorn.show()
 	return "ok"
 
 if __name__ == "__main__":
