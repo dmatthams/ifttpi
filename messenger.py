@@ -15,12 +15,16 @@ def home():
 
 @app.route('/message/<message>')
 def message(message):
+    unicorn.rotation(270)
     for _ in range(loops):
         unicorn_scroll(message,'red',255,0.1)
+    unicorn.clear()
+    unicorn.show()
     return "ok"
 
 @app.route('/icon/<icon>')
 def icon(icon):
+    unicorn.rotation(90)
     for _ in range(loops):
         playIcon(icon)
     unicorn.clear()
@@ -29,5 +33,4 @@ def icon(icon):
 
 if __name__ == "__main__":
     unicorn.brightness(1)
-    # unicorn.rotation(270)
     app.run(host='0.0.0.0', debug=True)
