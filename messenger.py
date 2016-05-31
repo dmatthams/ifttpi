@@ -7,7 +7,7 @@ from UHScroll import unicorn_scroll
 from playIcon import playIcon
 
 app = Flask(__name__)
-brightness = 0.1
+brightness = 0.2
 
 @app.route('/')
 def home():
