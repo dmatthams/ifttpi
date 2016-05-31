@@ -25,7 +25,7 @@ def icon(icon):
         playIcon(icon)
     unicorn.clear()
     unicorn.show()
-	return "ok"
+    return "ok"
 
 if __name__ == "__main__":
     unicorn.brightness(0.3)
