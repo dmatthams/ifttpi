@@ -2,7 +2,8 @@
 
 from flask import Flask, render_template
 import unicornhat as unicorn
-import time, os, stat, threading, playIcon, unicorn_scroll
+import time, os, stat, threading, playIcon
+from UHScroll import unicorn_scroll
 
 app = Flask(__name__)
 
